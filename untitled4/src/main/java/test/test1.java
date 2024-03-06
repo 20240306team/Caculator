@@ -7,28 +7,37 @@ public class test1 {
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
 
+        System.out.println("=============================");
+        System.out.println("==                         ==");
+        System.out.println("==                         ==");
+        System.out.println("==                         ==");
+        System.out.println("==                         ==");
+        System.out.println("=============================");
+        System.out.println("===| 7 |====| 8 |====| 9 |===");
+        System.out.println("===| 4 |====| 5 |====| 6 |===");
+        System.out.println("===| 1 |====| 2 |====| 3 |===");
         System.out.println("==============================");
-        System.out.println("== 더하기를 하고 싶으면 1을     ==");
-        System.out.println("==                          ==");
-        System.out.println("==                          ==");
-        System.out.println("==                          ==");
-        System.out.println("==============================");
-        System.out.println("===|7|======|8|==============");
-        System.out.println("==============================");
-        System.out.println("==============================");
-        System.out.println("==============================");
-      
 
-        if(scr.nextInt() ==1 ){
-            System.out.println("정수 두 개를 입력하세요");
-            System.out.print("첫번째 정수 : ");
-            int x = scr.nextInt();
-            System.out.print("두번째 정수 : ");
-            int y = scr.nextInt();
+        System.out.println("    숫자 한개를 입력해주세요.");
+        int a = scr.nextInt();
+        scr.nextLine();
+        System.out.println("    사칙연산 부호를 선택해주세요.");
+        String s = scr.nextLine();
+        switch (s){
 
-            System.out.println(x+" 와 " + y + " 의 합은 "+ (x+y));
+            case "+":
+                System.out.println("     숫자 한개를 입력해주세요");
+                int b = scr.nextInt();
+                System.out.println(a + b);
+
+
+
+
+
 
         }
+
+
 
     }
 }
