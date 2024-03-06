@@ -18,6 +18,7 @@ public class test1 {
         System.out.println("===| 1 |====| 2 |====| 3 |===");
         System.out.println("==============================");
 
+
         while (true) {
             System.out.print("사칙연산 부호를 적으세요 : ");
             String symbol = scr.nextLine();
@@ -26,6 +27,7 @@ public class test1 {
                 t.isSymbol(symbol);
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
+
                 break;
             }
             System.out.print("첫번째 정수 : ");
@@ -42,6 +44,9 @@ public class test1 {
                 case "*":
                     System.out.println(first * second);
                     break;
+
+                }
+
                 case "/":
                     try {
                         System.out.println(first / second);
@@ -58,13 +63,16 @@ public class test1 {
                     } catch (ArithmeticException e) {
                         System.out.println("두번째 정수가 0 이면 안됩니다");
                         break;
-                    }
+                    } 
+                        
+          
             }
         }
     }
     public void isSymbol(String symbol) throws IllegalArgumentException {
         if(!(symbol.equals("+")||symbol.equals("-")||symbol.equals("*")||symbol.equals("/")||symbol.equals("%"))){
             throw new IllegalArgumentException("사칙연산 부호가 아닙니다");
+
         }
 
 
