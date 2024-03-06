@@ -8,7 +8,7 @@ public class test1 {
         Scanner scr = new Scanner(System.in);
 
         System.out.println("==============================");
-        System.out.println("== 더하기를 하고 싶으면 1을     ==");
+        System.out.println("== 연산부호를 입력하세요        ==");
         System.out.println("==                          ==");
         System.out.println("==                          ==");
         System.out.println("==                          ==");
@@ -17,18 +17,41 @@ public class test1 {
         System.out.println("==============================");
         System.out.println("==============================");
         System.out.println("==============================");
-      
 
-        if(scr.nextInt() ==1 ){
-            System.out.println("정수 두 개를 입력하세요");
-            System.out.print("첫번째 정수 : ");
-            int x = scr.nextInt();
-            System.out.print("두번째 정수 : ");
-            int y = scr.nextInt();
+        System.out.print("사칙연산 부호를 적으세요 : ");
+        String symbol= scr.nextLine();
+        scr.nextLine();
+        System.out.print("첫번째 정수 : ");
+        int first = scr.nextInt();
+        System.out.print("두번째 정수 : ");
+        int second = scr.nextInt();
+        switch(symbol){
+            case "+" :
+                System.out.println(first + second);
+                break;
+            case "-" :
+                System.out.println(first - second);
+                break;
+            case "*" :
+                System.out.println(first * second);
+                break;
+            case "/":
+                try{
+                System.out.println(first/second);
+                break;}
+                catch(ArithmeticException e){
+                    System.out.println("두번째 정수가 0이면 안됩니다");
+                    break;
+                }
 
-            System.out.println(x+" 와 " + y + " 의 합은 "+ (x+y));
-
+            case "%" :
+                try{
+                    System.out.println(first%second );
+                    break;
+                }catch(ArithmeticException e){
+                    System.out.println("두번째 정수가 0 이면 안됩니다");
+                    break;
+                }
         }
-
     }
 }
