@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class test1 {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scr = new Scanner(System.in);
 
         System.out.println("==============================");
         System.out.println("== 더하기를 하고 싶으면 1을     ==");
