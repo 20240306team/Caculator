@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class test1 {
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
         System.out.println("==============================");
         System.out.println("== 더하기를 하고 싶으면 1을     ==");
         System.out.println("==                          ==");
@@ -15,8 +17,7 @@ public class test1 {
         System.out.println("==============================");
         System.out.println("==============================");
         System.out.println("==============================");
-
-        Scanner scr = new Scanner(System.in);
+      
 
         if(scr.nextInt() ==1 ){
             System.out.println("정수 두 개를 입력하세요");
