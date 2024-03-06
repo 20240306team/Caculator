@@ -70,12 +70,15 @@ public class test1 {
 
             }
         }
+        System.out.println("dddd");
     }
     public void isSymbol(String symbol) throws IllegalArgumentException {
         if(!(symbol.equals("+")||symbol.equals("-")||symbol.equals("*")||symbol.equals("/")||symbol.equals("%"))){
             throw new IllegalArgumentException("사칙연산 부호가 아닙니다");
 
         }
+
+
 
 
 
