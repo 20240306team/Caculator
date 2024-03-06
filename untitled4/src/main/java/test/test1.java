@@ -18,7 +18,11 @@ public class test1 {
         System.out.println("===| 1 |====| 2 |====| 3 |===");
         System.out.println("==============================");
 
+        System.out.print("첫번째 정수 : ");
+        int first = scr.nextInt();
+        scr.nextLine();
 
+        
         while (true) {
             System.out.print("사칙연산 부호를 적으세요 : ");
             String symbol = scr.nextLine();
@@ -30,8 +34,7 @@ public class test1 {
 
                 break;
             }
-            System.out.print("첫번째 정수 : ");
-            int first = scr.nextInt();
+
             System.out.print("두번째 정수 : ");
             int second = scr.nextInt();
             switch (symbol) {
@@ -45,7 +48,6 @@ public class test1 {
                     System.out.println(first * second);
                     break;
 
-                }
 
                 case "/":
                     try {
@@ -63,9 +65,9 @@ public class test1 {
                     } catch (ArithmeticException e) {
                         System.out.println("두번째 정수가 0 이면 안됩니다");
                         break;
-                    } 
-                        
-          
+                    }
+
+
             }
         }
     }
