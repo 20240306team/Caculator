@@ -7,16 +7,17 @@ public class test1 {
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
 
+        System.out.println("=============================");
+        System.out.println("==                         ==");
+        System.out.println("==                         ==");
+        System.out.println("==                         ==");
+        System.out.println("==                         ==");
+        System.out.println("=============================");
+        System.out.println("===| 7 |====| 8 |====| 9 |===");
+        System.out.println("===| 4 |====| 5 |====| 6 |===");
+        System.out.println("===| 1 |====| 2 |====| 3 |===");
         System.out.println("==============================");
-        System.out.println("== 연산부호를 입력하세요        ==");
-        System.out.println("==                          ==");
-        System.out.println("==                          ==");
-        System.out.println("==                          ==");
-        System.out.println("==============================");
-        System.out.println("===|7|======|8|==============");
-        System.out.println("==============================");
-        System.out.println("==============================");
-        System.out.println("==============================");
+
         while (true) {
             System.out.print("사칙연산 부호를 적으세요 : ");
             String symbol = scr.nextLine();
@@ -27,7 +28,6 @@ public class test1 {
                 System.out.println(e.getMessage());
                 break;
             }
-            scr.nextLine();
             System.out.print("첫번째 정수 : ");
             int first = scr.nextInt();
             System.out.print("두번째 정수 : ");
@@ -66,5 +66,8 @@ public class test1 {
         if(!(symbol.equals("+")||symbol.equals("-")||symbol.equals("*")||symbol.equals("/")||symbol.equals("%"))){
             throw new IllegalArgumentException("사칙연산 부호가 아닙니다");
         }
+
+
+
     }
 }
