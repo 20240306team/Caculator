@@ -13,7 +13,7 @@ public class test1 {
         System.out.println("==                          ==");
         System.out.println("==                          ==");
         System.out.println("==============================");
-        System.out.println("===|1 |========================");
+        System.out.println("===|7|======|8|==============");
         System.out.println("==============================");
         System.out.println("==============================");
         System.out.println("==============================");
