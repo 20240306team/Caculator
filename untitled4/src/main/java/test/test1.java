@@ -7,16 +7,18 @@ public class test1 {
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
 
+        System.out.println("=============================");
+        System.out.println("==                         ==");
+        System.out.println("==                         ==");
+        System.out.println("==                         ==");
+        System.out.println("==                         ==");
+        System.out.println("=============================");
+        System.out.println("===| 7 |====| 8 |====| 9 |===");
+        System.out.println("===| 4 |====| 5 |====| 6 |===");
+        System.out.println("===| 1 |====| 2 |====| 3 |===");
         System.out.println("==============================");
-        System.out.println("== 연산부호를 입력하세요        ==");
-        System.out.println("==                          ==");
-        System.out.println("==                          ==");
-        System.out.println("==                          ==");
-        System.out.println("==============================");
-        System.out.println("===|7|======|8|==============");
-        System.out.println("==============================");
-        System.out.println("==============================");
-        System.out.println("==============================");
+
+
 
         System.out.print("사칙연산 부호를 적으세요 : ");
         String symbol= scr.nextLine();
@@ -53,5 +55,8 @@ public class test1 {
                     break;
                 }
         }
+
+
+
     }
 }
