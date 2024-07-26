@@ -6,6 +6,7 @@ public class test1 {
 
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
+        test1 app = new test1();
 
         System.out.println("=============================");
         System.out.println("==                         ==");
@@ -20,64 +21,59 @@ public class test1 {
 
         System.out.print("첫번째 정수 : ");
         int first = scr.nextInt();
+
         scr.nextLine();
+        System.out.print("사칙연산 입력");
+        String symbol = scr.nextLine();
 
-        
-        while (true) {
-            System.out.print("사칙연산 부호를 적으세요 : ");
-            String symbol = scr.nextLine();
-            test1 t = new test1();
-            try {
-                t.isSymbol(symbol);
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage());
-
+        System.out.print("두번째 정수 : ");
+        int second = scr.nextInt();
+        switch (symbol) {
+            case "+":
+                app.a();
+                System.out.println(first + second);
                 break;
-            }
+            case "-":
+                System.out.println(first - second);
+                break;
+            case "*":
+                System.out.println(first * second);
+                break;
 
-            System.out.print("두번째 정수 : ");
-            int second = scr.nextInt();
-            switch (symbol) {
-                case "+":
-                    System.out.println(first + second);
+
+            case "/":
+                try {
+                    System.out.println(first / second);
                     break;
-                case "-":
-                    System.out.println(first - second);
+                } catch (ArithmeticException e) {
+                    System.out.println("두번째 정수가 0이면 안됩니다");
                     break;
-                case "*":
-                    System.out.println(first * second);
+                }
+
+            case "%":
+                try {
+                    System.out.println(first % second);
                     break;
+                } catch (ArithmeticException e) {
+                    System.out.println("두번째 정수가 0 이면 안됩니다");
+                    break;
+                } default:
+                System.out.println("잘못 입력했습니다");
 
 
-                case "/":
-                    try {
-                        System.out.println(first / second);
-                        break;
-                    } catch (ArithmeticException e) {
-                        System.out.println("두번째 정수가 0이면 안됩니다");
-                        break;
-                    }
-
-                case "%":
-                    try {
-                        System.out.println(first % second);
-                        break;
-                    } catch (ArithmeticException e) {
-                        System.out.println("두번째 정수가 0 이면 안됩니다");
-                        break;
-                    }
-
-
-            }
         }
     }
-    public void isSymbol(String symbol) throws IllegalArgumentException {
-        if(!(symbol.equals("+")||symbol.equals("-")||symbol.equals("*")||symbol.equals("/")||symbol.equals("%"))){
-            throw new IllegalArgumentException("사칙연산 부호가 아닙니다");
-
-        }
-
-
+    public void a(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("두번째 정수 : ");
+        int b = sc.nextInt();
 
     }
+
+
 }
+
+
+
+
+
